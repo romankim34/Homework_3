@@ -7,6 +7,7 @@ body {
 
 .container {
     max-width: 1060px;
+    height: 200vh;
     box-sizing: border-box;
     margin: auto;
     background: #fff;
@@ -38,27 +39,12 @@ body {
 
 .menu li {
     display: inline-block;
-    padding: 13px 0;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
     transition: 0.5s all;
 }
 
-.menu li:nth-child(3) {
-    padding: 13px 63px;
-    margin-left: -1px;
-}
-
-.menu li:first-child {
-    margin-right: -1px;
-}
-
 .menu li:hover {
-    border-left: 1px solid #838383;
-    border-right: 1px solid #838383;
-    background: linear-gradient(to top, #2e2e2e, #4a4a4a);
-}
-.menu .active {
     border-left: 1px solid #838383;
     border-right: 1px solid #838383;
     background: linear-gradient(to top, #2e2e2e, #4a4a4a);
@@ -67,8 +53,11 @@ body {
 .menu a {
     text-decoration: none;
     color: #fff;
-    padding: 13px 25px;
+    padding: 13px 40px;
+    display: block;
 }
+
+
 
 /* Sidebar -------------------------------------------- */
 
@@ -85,19 +74,12 @@ body {
 .sidebar a {
     color: #7f7d7d;
     text-decoration: none;
-    width: 240px;
     height: 40px;
     display: block;
     box-sizing: border-box;
     line-height: 40px;
     padding-left: 23px;
     transition: all 0.2s;
-}
-
-.active_sidebar a {
-    background: #f9f9f9;
-    padding-left: 35px;
-    color: #2c2c2c;
 }
 
 .sidebar a:hover {
@@ -159,10 +141,6 @@ body {
 }
 
 .menu_footer a:hover {
-    border-bottom: 1px solid #686868;
-}
-
-.active_footer a {
     border-bottom: 1px solid #686868;
 }
 
